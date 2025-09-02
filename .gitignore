@@ -1,0 +1,36 @@
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+.venv/
+.env
+.env.*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.Renviron
+
+# Coverage / build
+.coverage
+htmlcov/
+dist/
+build/
+
+# Data: keep only tiny synthetic fixtures in Git
+data/raw/**
+!data/raw/.gitkeep
+results/intermediate/**
+!results/.gitkeep
