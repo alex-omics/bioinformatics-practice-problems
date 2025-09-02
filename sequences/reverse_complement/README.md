@@ -7,4 +7,4 @@ Then, I simply reverse-sliced the comp to get the final answer, **"rev_comp"**.
 
 - **Time Complexity:** O(n)
 - **Space Complexity:** O(n)
-- **Data Note:** example sequence cited from GenBank: [XM_040734646.1](https://www.ncbi.nlm.nih.gov/nuccore/XM_040734646.1)
+- **Data Note:** example sequence sourced from GenBank: [XM_040734646.1](https://www.ncbi.nlm.nih.gov/nuccore/XM_040734646.1)
