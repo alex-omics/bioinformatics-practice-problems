@@ -46,8 +46,10 @@ def make_iterative_hams(months, litter_size):
 colony_1 = make_iterative_hams(4, 12)           # Litters of 12, 4 months
 colony_2 = make_iterative_hams(10, 3)           # Litters of 3, 10 months
 colony_3 = make_iterative_hams(13, 2)           # Litters of 2, 13 months
+colony_4 = make_iterative_hams(29, 3)           # Litters of 3, 29 months
 
 # Test statements
 print("\nWith a litter size of 12, after 4 months Colony 1 has " + str(colony_1) + " pairs.")
 print("\nWith a litter size of 3, after 10 months Colony 2 has " + str(colony_2) + " pairs.")
-print("\nWith a litter size of 2, after 13 months Colony 3 has " + str(colony_3) + " pairs.\n")
+print("\nWith a litter size of 2, after 13 months Colony 3 has " + str(colony_3) + " pairs.")
+print("\nWith a litter size of 3, after 29 months Colony 3 has " + str(colony_4) + " pairs.\n")
