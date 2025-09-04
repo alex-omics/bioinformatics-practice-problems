@@ -1,0 +1,31 @@
+"""
+Problem: Given a DNA sequence with canonical nucleic acids (e.g. A, T, C, G), output the correcponding RNA transcript
+Data Source: https://www.ncbi.nlm.nih.gov/nuccore/XM_040734646.1
+
+Solution Time Complexity: O(n)
+    The .replace() method scans the input sequence's n chars, resulting in O(n) read time and constant O(1) char check times.
+    Since there is no copying as with the string concatenation procedure, the resulting time complexity is O(n).
+
+Solution Space Complexity: O(n)
+    Major contributing variables are dna and rna which vary in space by a factor of n; 2n -> O(n)
+"""
+
+
+# Transcription method 2: Built in .replace() method
+def transcribe_replace(input_sequence):
+
+    # Swap out any Ts with Us
+    rna = input_sequence.replace("T", "U")
+
+    return rna
+
+
+# Example DNA sequence
+dna = "TAAATCAGAACGGCAGTAAGGTAAGAGCCCCCAGGGATTCCAGGCCCCCTCCACTGGGCAGCCCACGGGGGGGGGCACCATGGGCGTCTCGCATTCTTCCAAGGAGGCGTGGGAACGCGAGAGCAGGAGCGACTTCTGGTGGACGCAGATCCAGGAGGGGTTCCGGAGCCAGAGCGACTTCAACTGGGACCAGATCAAGCAGCTGCACCAGAGGTTCCGGCTGCTGAGCGGAGACCAGCCCACCATCCGGCCCGAGAACTTCGACTACGTCCTGGACCTGGAGTTCAACCCGATCCGCTCCAGGATCGTCCGCGCCTTCTTCGACAACCGGAACCTGGGCAAGGGGACCAGCGGCCTGGCGGAGGAGATTGGCTTCGAGGACTTCCTGACCATCATCTCCTACTTCAAGCCGCTGCGCTCGCACTTCAGCAAGGAGGAGGCGGAGCTGTACCGTCGGGAGAAGCTGCGCTTCCTCTTCCACATGTACGACGAGGACGGCGACGGGGTCATCACGCTGCAGGAGTACCGCAGGGTGGTGGAGGACCTGCTGTCGGCGAACCCGCAGGTGGAGCGCGCCTGGGTGCGCTCCATCGCCAACTCCATCGCGTGCCGCGCCTTGAAGGAGGCGGCCAGGGTGTCCGGCCATCCGCGGCAGGAGGACCAGCCCTACCAGGCCATCACCTTCGAGGACTTCGTCAAGACCTGGCAGGGCATCGACTTGGAGGTCAAGATGCGAGTCAACTTCCTGAACCAAGAAGCCGCGGCCTTGTGACAGTGACCCGCGGGGCCGTGCCCACCCCCAGCCCCACGGGAGAACGCCGTGAGCCCGGCAGCAGCTACCGGGTACGTGGGACTTGGTGACTTTTATCTCTGAGAATAAAGACAAATCAAAA"
+
+# Generate RNA transcript from input sequence
+rna = transcribe_replace(dna)
+
+# Test statements
+print("\nOriginal DNA strand: " + dna + "\n")
+print("Resulting RNA strand: " + rna + "\n")
