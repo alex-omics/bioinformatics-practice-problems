@@ -4,10 +4,10 @@ Problem: Given two DNA sequences of equal length, compute the number of dissimil
     uses the built-in zip() function.
 
 Solution Time Complexity: O(n)
-    We loop through the input sequences index by index, only comparing nts of i1 to nts of i2. 
+    The function loops through the input sequences index by index, only comparing nts of i1 to nts of i2. 
 
 Solution Space Complexity: O(1)
-    No new data structures are generated, we just needed simple computation statements and counters.
+    No new data structures are generated, only simple computation statements and counters were needed.
 """
 
 def hamming_zip(seq1, seq2):

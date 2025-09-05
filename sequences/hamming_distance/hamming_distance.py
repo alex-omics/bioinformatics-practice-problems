@@ -6,7 +6,7 @@ Solution Time Complexity: O(n)
     The function loops through the input sequences index by index, only comparing nts of i1 to nts of i2. 
 
 Solution Space Complexity: O(1)
-    No new data structures are generated, we just needed simple computation statements and counters.
+    No new data structures are generated, only simple computation statements and counters were needed.
 """
 
 def hamming(seq1, seq2):
