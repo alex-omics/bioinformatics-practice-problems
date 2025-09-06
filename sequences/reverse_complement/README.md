@@ -14,10 +14,12 @@ I used an if-else control flow to determine the complementary nucleotides, conca
 
 ## Time Complexity
 Reading the input sequence costs O(n), and the reverse slice operation costs O(n). Both of these are subordinate to the string concatenation procedure, which involves repeatedly copying over n strings of n chars for the length of the input sequence. That operation costs O(n^2).
+
 **Cost: (n^2)**
 
 ## Space Complexity
 The input sequence, comp, and rev_comp variables all cost O(n) space. They are additive: 3(n) = 3n, which reduces to O(n).
+
 **Cost: (n)**
 
 ## Lessons Learned
