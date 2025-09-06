@@ -15,13 +15,13 @@ We don't need to change the input's orientation; the thymine nucleotides (T) sim
 ## Time Complexity
 Given that the input string is broken into substrings and each substring concatenation costs O(n) time, the total time cost is 1 + 2 + 3 ... len(input_sequence), or O(n^2). The .replace() method scans the input sequence's n chars, resulting in O(n) read time and constant O(1) char check times. Since there is no copying as with the string concatenation procedure, the resulting time complexity is O(n).
 
-**Concat Algorithm: O(n^2)**
+**Concat Algorithm: O(n^2)**,
 **Replace Algorithm: O(n)**
 
 ## Space Complexity
 Major contributing variables are DNA and RNA strings, which vary in space by a factor of n, summing to 2n, which reduces to O(n). No difference in space cost between the *concat* and *replace* algorithms.
 
-**Concat Algorithm: O(n)**
+**Concat Algorithm: O(n)**,
 **Replace Algorithm: O(n)**
 
 ## Lessons Learned
