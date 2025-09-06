@@ -10,7 +10,7 @@ We don't need to change the input's orientation; the thymine nucleotides (T) sim
 ## Input / Output
 - **Input:** String of A/T/C/G (uppercase only supported for now)
 - **Output:** Corresponding RNA string with A/U/C/G nucleotides
-- **Assumptions:** Input is currently hardcoded; user-specified I/O not yet supported (see *Planned Improvements*).
+- **Assumptions:** Input is currently hardcoded; user-specified I/O not yet supported (see *Planned Improvements*)
 
 ## Time Complexity
 Given that the input string is broken into substrings and each substring concatenation costs O(n) time, the total time cost is 1 + 2 + 3 ... len(input_sequence), or O(n^2). The .replace() method scans the input sequence's n chars, resulting in O(n) read time and constant O(1) char check times. Since there is no copying as with the string concatenation procedure, the resulting time complexity is O(n).
@@ -30,7 +30,7 @@ In programming languages in which strings are immutable, string concatenation re
 ## Planned Improvements
 - **Handle user-specified input/output**
 - **Add a CLI wrapper with error checking**
-- **Support FASTA files**
+- **Support printing FASTA outputs**
 - **Print results in a friendlier CLI format**
 
 ## References

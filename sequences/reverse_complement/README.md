@@ -10,7 +10,7 @@ I used an if-else control flow to determine the complementary nucleotides, conca
 ## Input / Output
 - **Input:** String of A/T/C/G (uppercase only supported for now)
 - **Output:** Reverse complement string
-- **Assumptions:** Input is currently hardcoded; user-specified I/O not yet supported (see *Planned Improvements*).
+- **Assumptions:** Input is currently hardcoded; user-specified I/O not yet supported (see *Planned Improvements*)
 
 ## Time Complexity
 Reading the input sequence costs O(n), and the reverse slice operation costs O(n). Both of these are subordinate to the string concatenation procedure, which involves repeatedly copying over n strings of n chars for the length of the input sequence. That operation costs O(n^2).
@@ -29,7 +29,7 @@ I first attempted using *.append()*, but realized that method doesn't apply to s
 - **Brainstorm/implement improved nucleotide-mapping algorithm**
 - **Handle user-specified input/output**
 - **Add a CLI wrapper with error checking**
-- **Support FASTA files**
+- **Support printing FASTA outputs**
 - **Print results in a friendlier CLI format**
 
 ## References
