@@ -33,6 +33,7 @@ def file_parser(file_path):
 
 
 # Function to map DNA codons to amino acids 
+# DIRECTION TRANSLATION FOR NOW, MUST INCORPORATE ORF DETECTION
 def translate_manual(dna):
 
     protein = []
