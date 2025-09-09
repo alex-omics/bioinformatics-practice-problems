@@ -1,10 +1,11 @@
 """
-Hardcoded codon-to-amino acid table to demonstrate a manual solution to a common bioinformatics problem. 
+Hardcoded amino acid-to-codon table to demonstrate a manual solution to a common bioinformatics problem. 
 
 Source: https://stackoverflow.com/questions/12547095/how-to-find-the-codons-that-codes-for-the-same-amino-acid-in-python
 """
 
-codon_table = {
+
+aa_to_codon_table = {
     'A': ('GCT', 'GCC', 'GCA', 'GCG'),
     'C': ('TGT', 'TGC'),
     'D': ('GAT', 'GAC'),
